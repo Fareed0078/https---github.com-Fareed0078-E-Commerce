@@ -1,0 +1,237 @@
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.521);
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 1000;
+}
+
+.left{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    color: crimson;
+    font-size: 1.5rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.mid{
+   width: 60%;
+   display: flex;
+   align-self: stretch;
+   justify-content: space-evenly;
+}
+.mid>a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    width: 100%;
+    font-size: 1.3rem;
+}
+.mid>a:hover{
+    border-bottom: 3px solid crimson;
+    color: crimson;
+}
+.right{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.right > img {
+    width: 2rem;
+    margin: 0.8rem;
+    cursor: pointer;
+  }
+
+  /* -------------------------------------------- */
+
+  .home{
+    display: flex;
+    height: 90vh;
+    background-image: radial-gradient(rgb(230, 221, 255), rgb(184, 184, 223));
+
+  }
+.container{
+    width: 100%;
+}
+#rightcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#rightcontainer > img {
+    margin-right: 7rem;
+    filter: drop-shadow(0 0 20px black);
+  }
+
+#leftcontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: center;
+}
+
+#leftcontainer>h1{
+    font-size: 4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#leftcontainer>h2{
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+#leftcontainer>p{
+       margin-top: 15px;
+       font-family:sans-serif;
+}
+
+#leftcontainer>button{
+    width: 25%;
+    border: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 7px;
+    
+}
+#leftcontainer>button>a{
+    text-decoration: none;
+}
+
+#leftcontainer> button:hover {
+    background-color: rgb(177, 23, 54);
+    color: white;
+  }
+
+
+
+  /* ------------------------------------------------------------------- */
+
+  
+  #products>h1{
+    text-align: center;
+    border-bottom: 5px solid crimson;
+    color: crimson;
+    margin: 5rem auto;
+    width: 25%;
+    font-size: 2.5rem;
+    padding: 1rem;
+
+  }
+
+
+  .productContainer{
+  
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 80vw;
+    margin: auto;
+
+  }
+  .product {
+    transition: all 0.3s;
+    cursor: pointer;
+    height: 30vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+  }
+  .product > img {
+    width: 20vmax;
+  }
+
+  .product > h4 {
+    margin: 2%;
+  }
+  .product > h5 {
+    margin: 0px;
+  }
+  
+  .product:hover {
+    transform: translateY(-10px);
+  }
+
+
+  /* ------------------------------------------------------------------------ */
+
+  footer {
+    margin-top: 10vmax;
+    padding: 2vmax;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .leftFooter {
+    width: 20%;
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftFooter > h4 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .leftFooter > p {
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .leftFooter > img {
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+  }
+  
+  .midFooter {
+    width: 60%;
+  
+    text-align: center;
+  }
+  
+  .midFooter > h1 {
+    font-size: 4vmax;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: crimson;
+  }
+  .midFooter > p {
+    max-width: 60%;
+  
+    margin: 1vmax auto;
+  }
+  
+  .rightFooter {
+    width: 20%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightFooter > h4 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.4vmax;
+    text-decoration: underline;
+  }
+  .rightFooter > a {
+    text-decoration: none;
+    font-size: 1.3vmax;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+    margin: 0.5vmax;
+  }
